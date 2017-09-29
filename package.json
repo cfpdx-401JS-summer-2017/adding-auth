@@ -1,0 +1,42 @@
+{
+  "name": "adding-auth",
+  "version": "1.0.0",
+  "description": "Adding User Management and Auth",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test:watch:nodemon": "nodemon --watch src --watch tests --exec 'npm test'",
+    "test:watch": "npm test -- -w",
+    "test": "mocha tests --recursive --reporter mocha-better-spec-reporter",
+    "start": "nodemon --watch lib --watch tests --exec 'npm test'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wbeck32/adding-auth.git"
+  },
+  "author": "Wendy Beck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wbeck32/adding-auth/issues"
+  },
+  "homepage": "https://github.com/wbeck32/adding-auth#readme",
+  "devDependencies": {
+    "bcryptjs": "^2.4.3",
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.2",
+    "chai": "^4.1.0",
+    "chai-http": "^3.0.0",
+    "express": "^4.15.3",
+    "jsonwebtoken-promisified": "^1.0.3",
+    "mocha": "^3.5.0",
+    "mocha-better-spec-reporter": "^3.1.0",
+    "mongoose": "^4.11.5",
+    "morgan": "^1.8.2"
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0"
+  }
+}
